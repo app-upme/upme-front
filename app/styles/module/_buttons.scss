@@ -1,3 +1,14 @@
+.btn-primary {
+  font-family: 'Roboto';
+  border-radius: 2px;
+  background-color: #2ecc71;
+  padding: 10px 16px;
+  font-weight: 500;
+  @include font-size(14px);
+  color: $white;
+  display: inline-block;
+}
+
 .tab-button {
   font-family: 'Roboto';
   text-transform: uppercase;

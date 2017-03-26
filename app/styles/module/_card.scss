@@ -4,13 +4,29 @@
   cursor: pointer;
   .card-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+  }
+  .card-header-info {
+    display: flex;
+    align-items: center;
+    @include font-size(14px);
+    margin-left: 32px;
+    [class^="icon-"] {
+      margin-right: 8px;
+      color: $gray-darken;
+      @include font-size(22px);
+    }
   }
   .card-title {
+    margin-right: auto;
     @include font-size(14px);
   }
   .card-content {
     @include font-size(12px);
     margin-top: 8px;
+  }
+  .card-action {
+    display: flex;
+    justify-content: flex-end;
   }
 }
