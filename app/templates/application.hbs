@@ -1,5 +1,71 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{app-navbar}}
 
-{{outlet}}
+<div class="l-containter">
+  {{outlet}}
+
+  <div class="l-whiteframe">
+    <div class="l-whiteframe-header">
+      <p class="lead-text">
+        Janeiro 2016
+      </p>
+
+      <div class="l-whiteframe-header-content">
+        <a href="#" class="tab-button is-active"> Semana </a>
+        <a href="#" class="tab-button"> Mês </a>
+        <a href="#" class="tab-button"> Tudo </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="l-whiteframe">
+    <div class="l-whiteframe-header">
+      <p class="lead-text">
+        Turmas
+      </p>
+
+      <div class="l-whiteframe-header-content">
+        <div class="search-field">
+          <input type="text" class="search-input" placeholder="Buscar aluno">
+          <a href="#" class="search-btn"> <i class="icon-search"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-whiteframe-content">
+      <div class="card">
+        <div class="card-header">
+          <p class="card-title"> Handball </p>
+
+          <div class="card-header-info">
+            <span> <i class="icon-search"></i> 31 </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card is-active">
+        <div class="card-header">
+          <p class="card-title"> Baskball </p>
+
+          <div class="card-header-info">
+            <span> <i class="icon-search"></i> 31 </span>
+          </div>
+        </div>
+        <div class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet dolor sit amet tellus consectetur pellentesque id sit amet risus. Proin quis scelerisque justo, sit amet posuere massa. Curabitur accumsan lectus eu justo consectetur.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <p class="card-title"> Baskball </p>
+
+          <div class="card-header-info">
+            <span> <i class="icon-search"></i> 31 </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
