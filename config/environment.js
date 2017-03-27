@@ -5,7 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'upme-front',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'router-scroll',
+    historySupportMiddleware: true,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,6 +21,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    i18n: {
+      defaultLocale: 'pt-br'
     }
   };
 
