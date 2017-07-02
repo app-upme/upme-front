@@ -9,8 +9,14 @@ const Router = Ember.Router.extend(RouterScroll, {
 
 Router.map(function() {
   this.route('groups', function() {
+    this.route('show', { path: '/:id' });
     this.route('users');
   });
+
+  this.route('users', function() {
+    this.route('show', { path: '/:id' });
+  });
+
   this.route('dashboard', { path: '/' });
 });
 

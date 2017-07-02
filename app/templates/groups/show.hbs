@@ -1,7 +1,7 @@
 <div class="l-whiteframe">
   <div class="l-whiteframe-header">
     <p class="lead-text">
-      {{t 'pages.dashboard.history'}}
+      {{t 'pages.groups.show.title' group=model.name}}
     </p>
   </div>
 </div>
@@ -9,19 +9,19 @@
 <div class="l-whiteframe">
   <div class="l-whiteframe-header">
     <p class="lead-text">
-      {{t 'pages.dashboard.groups'}}
+      {{t 'pages.groups.show.users'}}
     </p>
 
     <div class="l-whiteframe-header-content">
       <div class="search-field">
-        <input type="text" class="search-input" placeholder="{{t 'pages.dashboard.placeholders.search'}}">
+        <input type="text" class="search-input" placeholder="{{t 'pages.groups.show.placeholders.search'}}">
         <a href="#" class="search-btn"> <i class="icon-search"></i> </a>
       </div>
     </div>
   </div>
 
   <div class="l-whiteframe-content">
-    {{group/group-list groups=model}}
+    {{user/user-list users=model.users}}
   </div>
 </div>
 
@@ -29,5 +29,4 @@
   {{form-group}}
 {{/app-dialog}}
 
-{{button-fab icon='+' sendAction=(action 'openCreateNewGroupDialog')}}
-
+{{button-fab icon='+' sendAction=(action 'openCreateNewUserDialog')}}

@@ -1,0 +1,17 @@
+<div class="card {{activeClass}}" {{action onclick this}}>
+  <div class="card-header">
+    <p class="card-title"> {{group.name}} </p>
+
+    <span class="card-header-info"> <i class="icon-people"></i> 31 </span>
+    <span class="card-header-info"> <i class="icon-event"></i> 23/12/2015 </span>
+  </div>
+  <div class="card-content">
+    {{group.description}}
+
+    <div class="card-action">
+      {{#link-to 'groups.show' group.id class='btn-primary'}}
+        VER TURMA
+      {{/link-to}}
+    </div>
+  </div>
+</div>

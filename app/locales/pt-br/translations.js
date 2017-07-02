@@ -14,6 +14,13 @@ export default {
       "history": "Histórico",
       "placeholders.search": "Buscar turma",
       "dialog.title": "Adicionar turma"
+    },
+    "groups": {
+      "show": {
+        "title": "Histórico - {{group}}",
+        "users": "Praticantes",
+        "placeholders.search": "Buscar aluno"
+      }
     }
   }
 };
