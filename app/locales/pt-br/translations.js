@@ -6,6 +6,13 @@ export default {
         "description": "Descrição da turma"
       },
       "buttons.submit": "Salvar turma"
+    },
+    "form-user": {
+      "placeholders": {
+        "name": "Nome do aluno",
+        "email": "Email do aluno"
+      },
+      "buttons.submit": "Salvar praticante"
     }
   },
   "pages": {
@@ -19,7 +26,8 @@ export default {
       "show": {
         "title": "Histórico - {{group}}",
         "users": "Praticantes",
-        "placeholders.search": "Buscar aluno"
+        "placeholders.search": "Buscar aluno",
+        "dialog.title": "Adicionar praticante"
       }
     }
   }
