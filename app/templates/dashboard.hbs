@@ -1,0 +1,71 @@
+{{app-navbar}}
+
+<div class="l-containter">
+  {{outlet}}
+
+  <div class="l-whiteframe">
+    <div class="l-whiteframe-header">
+      <p class="lead-text">
+        {{t 'history'}}
+      </p>
+    </div>
+  </div>
+
+  <div class="l-whiteframe">
+    <div class="l-whiteframe-header">
+      <p class="lead-text">
+        Turmas
+      </p>
+
+      <div class="l-whiteframe-header-content">
+        <div class="search-field">
+          <input type="text" class="search-input" placeholder="Buscar aluno">
+          <a href="#" class="search-btn"> <i class="icon-search"></i> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-whiteframe-content">
+      <div class="card">
+        <div class="card-header">
+         <p class="card-title"> Baskball </p>
+
+          <span class="card-header-info"> <i class="icon-people"></i> 31 </span>
+          <span class="card-header-info"> <i class="icon-event"></i> 23/12/2015 </span>
+        </div>
+      </div>
+
+      <div class="card is-active">
+        <div class="card-header">
+          <p class="card-title"> Baskball </p>
+
+          <span class="card-header-info"> <i class="icon-people"></i> 31 </span>
+          <span class="card-header-info"> <i class="icon-event"></i> 23/12/2015 </span>
+        </div>
+        <div class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet dolor sit amet tellus consectetur pellentesque id sit amet risus. Proin quis scelerisque justo, sit amet posuere massa. Curabitur accumsan lectus eu justo consectetur.
+        </div>
+        <div class="card-action">
+          <a href="#" class="btn-primary"> VER TURMA </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <p class="card-title"> Baskball </p>
+
+          <span class="card-header-info"> <i class="icon-people"></i> 31 </span>
+          <span class="card-header-info"> <i class="icon-event"></i> 23/12/2015 </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{#app-dialog open=open title='Adicionar turma'}}
+  {{form-group}}
+{{/app-dialog}}
+
+{{button-fab icon='+' sendAction=(action 'openCreateNewGroupDialog')}}
+
