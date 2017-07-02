@@ -13,6 +13,14 @@ export default {
         "email": "Email do aluno"
       },
       "buttons.submit": "Salvar praticante"
+    },
+    "form-vo2max": {
+      "placeholders.distance": "Informe a distância percorrida",
+      "labels":{
+        "distance": "Distância",
+        "training_date": "Data do treino"
+      },
+      "buttons.submit": "Salvar treino"
     }
   },
   "pages": {
@@ -28,6 +36,13 @@ export default {
         "users": "Praticantes",
         "placeholders.search": "Buscar aluno",
         "dialog.title": "Adicionar praticante"
+      }
+    },
+    "users": {
+      "show": {
+        "title": "Inicio do treinamento: {{started_at}}",
+        "trainings": "Treinamentos",
+        "dialog.title": "Adicionar treino"
       }
     }
   }

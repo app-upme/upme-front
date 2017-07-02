@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <th><td> # </td></th>
+    <th><td> Data </td></th>
+    <th><td> Distância </td></th>
+    <th><td> Velocidade Média </td></th>
+    <th><td> Cassificação </td></th>
+    <th><td> Resultado </td></th>
+  </thead>
+  <tbody>
+    {{#each trainings as |training|}}
+
+      <tr>
+        <td> {{training.id}} </td>
+        <td> {{training.training_date}} </td>
+        <td> {{training.distance}} </td>
+        <td> {{training.average_speed}} </td>
+        <td> {{training.ranking}} </td>
+        <td> {{training.result}} </td>
+      </tr>
+
+    {{else}}
+      <tr>
+        <td colspan="6" align="center"> Sem treinos cadastrados </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
