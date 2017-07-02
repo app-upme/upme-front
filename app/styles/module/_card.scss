@@ -24,6 +24,7 @@
   .card-content {
     @include font-size(12px);
     margin-top: 8px;
+    display: none;
   }
   .card-action {
     display: flex;
