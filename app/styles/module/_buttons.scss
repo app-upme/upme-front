@@ -57,3 +57,14 @@
   }
 }
 
+.fab-secondary {
+  font-size:1em;
+  bottom: 86px;
+  right: 25px;
+  background-color: $danger-color;
+  width: 32px;
+  height: 32px;
+  &:hover {
+    background-color: $danger-dark-color;
+  }
+}

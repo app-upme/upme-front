@@ -4,5 +4,7 @@ export default DS.Model.extend({
   users:       DS.hasMany({ async: true }),
 
   name:        DS.attr('string'),
-  description: DS.attr('string')
+  description: DS.attr('string'),
+  users_count:  DS.attr('number')
+
 });

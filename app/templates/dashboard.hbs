@@ -26,7 +26,7 @@
 </div>
 
 {{#app-dialog open=open title=(t 'pages.dashboard.dialog.title')}}
-  {{form-group}}
+  {{form-group onCreate=(action 'dismissDialog')}}
 {{/app-dialog}}
 
 {{button-fab icon='+' sendAction=(action 'openCreateNewGroupDialog')}}

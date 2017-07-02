@@ -6,6 +6,9 @@ export default Ember.Controller.extend({
   actions: {
     openCreateNewGroupDialog() {
       this.toggleProperty('open');
+    },
+    dismissDialog() {
+      this.toggleProperty('open');
     }
   }
 });
