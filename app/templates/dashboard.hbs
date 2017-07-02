@@ -4,7 +4,7 @@
   <div class="l-whiteframe">
     <div class="l-whiteframe-header">
       <p class="lead-text">
-        {{t 'history'}}
+        {{t 'pages.dashboard.history'}}
       </p>
     </div>
   </div>
@@ -12,12 +12,12 @@
   <div class="l-whiteframe">
     <div class="l-whiteframe-header">
       <p class="lead-text">
-        Turmas
+        {{t 'pages.dashboard.groups'}}
       </p>
 
       <div class="l-whiteframe-header-content">
         <div class="search-field">
-          <input type="text" class="search-input" placeholder="Buscar aluno">
+          <input type="text" class="search-input" placeholder="{{t 'pages.dashboard.placeholders.search'}}">
           <a href="#" class="search-btn"> <i class="icon-search"></i> </a>
         </div>
       </div>
@@ -29,7 +29,7 @@
   </div>
 </div>
 
-{{#app-dialog open=open title='Adicionar turma'}}
+{{#app-dialog open=open title=(t 'pages.dashboard.dialog.title')}}
   {{form-group}}
 {{/app-dialog}}
 

@@ -7,7 +7,7 @@
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
-
+  width: 350px;
   .dialog-content {
     padding: 16px;
     background: #fff;
@@ -21,6 +21,7 @@
       justify-content: space-between;
       border-bottom: 1px solid #ccc;
       margin-bottom: 16px;
+      padding-bottom: 8px;
     }
   }
   .overlay {
