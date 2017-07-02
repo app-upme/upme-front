@@ -1,11 +1,9 @@
 export default {
-  "teste": "Oiee",
-  //
-  // "a": {
-  //   "nested": {
-  //     "key": "Text for a.nested.key"
-  //   }
-  // },
-  //
-  // "key.with.interpolation": "Text with {{anInterpolation}}"
+  "history": "Histórico",
+  "components": {
+    "form-group": {
+      "placeholders.name": "Nome da turma",
+      "buttons.submit": "Salvar turma"
+    }
+  }
 };

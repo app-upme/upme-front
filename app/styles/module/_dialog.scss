@@ -9,10 +9,19 @@
   -webkit-transition: all .25s ease-in-out;
 
   .dialog-content {
+    padding: 16px;
     background: #fff;
     position: relative;
     left: -50%;
     z-index: 20;
+    border-radius: 2px;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 16px;
+    }
   }
   .overlay {
     left: 0;

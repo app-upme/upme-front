@@ -1,4 +1,20 @@
+.btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid transparent;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
 .btn-primary {
+  cursor: pointer;
   font-family: 'Roboto';
   border-radius: 2px;
   background-color: #2ecc71;
@@ -15,3 +31,29 @@
   padding: 24px 20px;
   font-weight: 500;
 }
+
+.fab {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border:none;
+  font-size:1.5em;
+  color: $white;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+     -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+          box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+  &:hover {
+    background-color: $secondary-dark-color;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+

@@ -1,0 +1,13 @@
+<div class="dialog {{activeClass}}">
+  <div class="dialog-content">
+    <div class="header">
+      <h3> {{title}} </h3>
+      <i class="icon-clear" {{action 'close'}}></i>
+    </div>
+    <div class="copy">
+      {{yield}}
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+</div>
