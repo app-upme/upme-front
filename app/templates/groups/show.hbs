@@ -26,7 +26,7 @@
 </div>
 
 {{#app-dialog open=open title=(t 'pages.groups.show.dialog.title')}}
-  {{form-user}}
+  {{form-user onCreate=(action 'dismissDialog') groupId=model.id}}
 {{/app-dialog}}
 
 {{button-fab icon='x' classes='fab-secondary' sendAction=(action 'deleteGroup' model.id)}}

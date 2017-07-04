@@ -10,8 +10,11 @@ export default {
     "form-user": {
       "placeholders": {
         "name": "Nome do aluno",
-        "email": "Email do aluno"
+        "email": "Email do aluno",
+        "age": "Idade",
+        "gender": "Gênero"
       },
+      "labels.start_training_at": "Inicio do treinamento",
       "buttons.submit": "Salvar praticante"
     },
     "form-vo2max": {

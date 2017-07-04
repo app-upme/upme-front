@@ -4,6 +4,12 @@ export default Ember.Route.extend({
 
   model(params) {
     return this.get('store').findRecord('group', params.id);
+  },
+
+  actions: {
+    groupUpdated() {
+      this.refresh();
+    }
   }
 
 });

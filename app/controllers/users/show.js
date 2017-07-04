@@ -9,8 +9,14 @@ export default Ember.Controller.extend({
     },
     deleteUser(id) {
       if( confirm('tem certeza que deseja excluir este usuário?') ){
-        this.get('store').destroyRecord('user', id);
+        this.get('store').findRecord('user', id, { backgroundReload: false }).then(user => {
+          user.destroyRecord();
+          this.transitionToRoute('groups.show', user.get('group_id'));
+        });
       }
+    },
+    dismissDialog() {
+      this.toggleProperty('open');
     }
   }
 });

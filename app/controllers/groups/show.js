@@ -12,6 +12,10 @@ export default Ember.Controller.extend({
       if( confirm('tem certeza que deseja excluir este grupo?') ){
         this.get('store').destroyRecord('group', id);
       }
+    },
+    dismissDialog() {
+      this.toggleProperty('open');
+      this.send('groupUpdated');
     }
   }
 });

@@ -8,7 +8,16 @@
   </div>
 
   <div class="form-group">
+    <label for="startTrainingAt"> {{t 'components.form-user.labels.start_training_at'}} </label>
     {{input value=startTrainingAt type='date' class='form-control'}}
+  </div>
+
+  <div class="form-group">
+    {{input value=age type='number' class='form-control' placeholder=(t 'components.form-user.placeholders.age')}}
+  </div>
+
+  <div class="form-group">
+    {{input value=gender class='form-control' placeholder=(t 'components.form-user.placeholders.gender')}}
   </div>
 
   <button class="btn btn-primary btn-block" type="submit"> {{t 'components.form-user.buttons.submit'}} </button>
