@@ -4,25 +4,7 @@ export default Ember.Component.extend({
   averageData: null,
   compareData: null,
   chartData: null,
-  // chartData: {
-  //   labels: ['jan', 'fev', 'mar'],
-  //   datasets: [{
-  //     data: [10,20,15],
-  //     label: 'turma 1',
-  //     lineTension:           0.3,
-  //     borderWidth:           2,
-  //     backgroundColor:       "rgba(109, 166, 233, 0.3)",
-  //     borderColor:           "rgba(109, 166, 233, 1)",
-  //     pointBorderColor:      "rgba(109, 166, 233, 1)",
-  //     pointBackgroundColor:  "rgba(109, 166, 233, 1)",
-  //     pointBorderWidth:      1,
-  //     pointHoverRadius:      8,
-  //     pointHoverBorderColor: "rgba(29,  105, 194, 1)",
-  //     pointHoverBorderWidth: 2,
-  //     pointRadius:           3,
-  //     pointHitRadius:        10
-  //   }]
-  // },
+
   datasetPrimaryStyle: {
     lineTension:           0.3,
     borderWidth:           2,

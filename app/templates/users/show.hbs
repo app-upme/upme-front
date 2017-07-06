@@ -9,7 +9,7 @@
 </div>
 
 {{#app-dialog open=open title=(t 'pages.users.show.dialog.title')}}
-  {{form-vo2max onCreate=(action 'dismissDialog')}}
+  {{form-vo2max onCreate=(action 'dismissDialog') userId=model.id}}
 {{/app-dialog}}
 
 {{button-fab icon='x' classes='fab-secondary' sendAction=(action 'deleteUser' model.id)}}
