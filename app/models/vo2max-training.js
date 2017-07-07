@@ -3,9 +3,9 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   user:          DS.belongsTo(),
 
-  training_date: DS.attr('date'),
-  distance:      DS.attr('number'),
-  average_speed: DS.attr('number'),
-  result:        DS.attr('number'),
-  ranking:       DS.attr('string')
+  training_date: DS.attr(),
+  distance:      DS.attr(),
+  average_speed: DS.attr(),
+  result:        DS.attr(),
+  ranking:       DS.attr()
 });

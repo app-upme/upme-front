@@ -5,7 +5,7 @@
     </p>
   </div>
   <div class="l-whiteframe-content">
-    {{chart-canvas averageData=data compareData=compareData}}
+    {{chart-canvas averageData=model.data compareData=compareData}}
   </div>
 </div>
 
@@ -24,7 +24,7 @@
   </div>
 
   <div class="l-whiteframe-content">
-    {{group/group-list groups=model}}
+    {{group/group-list groups=model.groups}}
   </div>
 </div>
 

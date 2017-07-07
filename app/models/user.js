@@ -8,7 +8,7 @@ export default DS.Model.extend({
   email:               DS.attr('string'),
   avatar:              DS.attr('string'),
   gender:              DS.attr('string'),
+  started_training_at: DS.attr('string'),
   age:                 DS.attr('number'),
-  started_training_at: DS.attr('date'),
   group_id:            DS.attr('number')
 });

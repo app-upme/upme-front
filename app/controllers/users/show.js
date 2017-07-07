@@ -17,6 +17,7 @@ export default Ember.Controller.extend({
     },
     dismissDialog() {
       this.toggleProperty('open');
+      this.send('userUpdated');
     }
   }
 });

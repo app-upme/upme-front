@@ -10,6 +10,14 @@ export default ApplicationAdapter.extend({
 
   urlForCreateUser(groupId) {
     return this.buildURL() + `/groups/${ groupId }/users`;
+  },
+
+  results() {
+    return this.ajax(this.urlForResults(), 'GET');
+  },
+
+  urlForResults(groupId) {
+    return this.buildURL() + `/results`;
   }
 
 });
