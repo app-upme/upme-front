@@ -12,11 +12,14 @@ export default ApplicationAdapter.extend({
     return this.buildURL() + `/groups/${ groupId }/users`;
   },
 
-  results() {
-    return this.ajax(this.urlForResults(), 'GET');
+  results(groupId) {
+    return this.ajax(this.urlForResults(groupId), 'GET');
   },
 
   urlForResults(groupId) {
+    if (groupId) {
+      return this.buildURL() + `/groups/${ groupId }/results`;
+    }
     return this.buildURL() + `/results`;
   }
 

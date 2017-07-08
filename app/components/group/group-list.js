@@ -3,17 +3,19 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   groups: null,
   activeGroup: null,
+  onclick: null,
 
   actions: {
-    activate(group) {
+    activate(groupComponent) {
       let currentActive = this.get('activeGroup');
 
       if (currentActive) {
         currentActive.set('isActive', false);
       }
 
-      group.set('isActive', true);
-      this.set('activeGroup', group);
+      groupComponent.set('isActive', true);
+      this.get('onclick')( groupComponent.group );
+      this.set('activeGroup', groupComponent);
     }
   }
 });

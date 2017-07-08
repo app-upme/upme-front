@@ -37,10 +37,12 @@ export default Ember.Component.extend({
   setupData: function() {
     let datasets = [];
     let labels = this.get('averageData.labels');
-    datasets.push( this.getAverageDataset() );
+
     if (this.get('compareData')) {
       datasets.push( this.getCompareDataset() );
     }
+
+    datasets.push( this.getAverageDataset() );
 
     this.set('chartData', {
       labels: labels,

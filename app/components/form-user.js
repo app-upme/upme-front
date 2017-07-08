@@ -14,11 +14,11 @@ export default Ember.Component.extend({
   actions: {
     createUser() {
       let userAttributes = {
-        name:            this.get('name'),
-        email:           this.get('email'),
-        startTrainingAt: this.get('startTrainingAt'),
-        age:             this.get('age'),
-        gender:          this.get('gender')
+        name:                this.get('name'),
+        email:               this.get('email'),
+        started_training_at: this.get('startTrainingAt'),
+        age:                 this.get('age'),
+        gender:              this.get('gender')
       };
 
       let groupAdapter = this.get('store').adapterFor('group');
