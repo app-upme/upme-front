@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   store: Ember.inject.service(),
   open: false,
+  compareData: null,
 
   actions: {
     openCreateNewUserDialog() {
@@ -16,6 +17,12 @@ export default Ember.Controller.extend({
     dismissDialog() {
       this.toggleProperty('open');
       this.send('groupUpdated');
+    },
+    showUserData(user) {
+      let userAdapter = this.get('store').adapterFor('user');
+      userAdapter.results( user.id ).then( data => {
+        this.set('compareData', data);
+      });
     }
   }
 });

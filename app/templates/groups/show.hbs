@@ -1,8 +1,11 @@
 <div class="l-whiteframe">
   <div class="l-whiteframe-header">
     <p class="lead-text">
-      {{t 'pages.groups.show.title' group=model.name}}
+      {{t 'pages.groups.show.title' group=model.group.name}}
     </p>
+  </div>
+  <div class="l-whiteframe-content">
+    {{chart-canvas averageData=model.data compareData=compareData}}
   </div>
 </div>
 
@@ -21,13 +24,13 @@
   </div>
 
   <div class="l-whiteframe-content">
-    {{user/user-list users=model.users}}
+    {{user/user-list users=model.group.users onclick=(action 'showUserData')}}
   </div>
 </div>
 
 {{#app-dialog open=open title=(t 'pages.groups.show.dialog.title')}}
-  {{form-user onCreate=(action 'dismissDialog') groupId=model.id}}
+  {{form-user onCreate=(action 'dismissDialog') groupId=model.group.id}}
 {{/app-dialog}}
 
-{{button-fab icon='x' classes='fab-secondary' sendAction=(action 'deleteGroup' model.id)}}
+{{button-fab icon='x' classes='fab-secondary' sendAction=(action 'deleteGroup' model.group.id)}}
 {{button-fab icon='+' sendAction=(action 'openCreateNewUserDialog')}}

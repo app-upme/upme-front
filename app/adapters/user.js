@@ -10,6 +10,14 @@ export default ApplicationAdapter.extend({
 
   urlForCreateUser(userId) {
     return this.buildURL() + `/users/${ userId }/vo2max_trainings`;
+  },
+
+  results(userId) {
+    return this.ajax(this.urlForResults(userId), 'GET');
+  },
+
+  urlForResults(userId) {
+    return this.buildURL() + `/users/${ userId }/results`;
   }
 
 });

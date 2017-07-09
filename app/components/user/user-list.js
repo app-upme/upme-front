@@ -3,17 +3,19 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   users: null,
   activeUser: null,
+  onclick: null,
 
   actions: {
-    activate(user) {
+    activate(userComponent) {
       let currentActive = this.get('activeUser');
 
       if (currentActive) {
         currentActive.set('isActive', false);
       }
 
-      user.set('isActive', true);
-      this.set('activeUser', user);
+      userComponent.set('isActive', true);
+      this.get('onclick')( userComponent.user );
+      this.set('activeUser', userComponent);
     }
   }
 });
