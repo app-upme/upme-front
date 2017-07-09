@@ -17,14 +17,14 @@
 
     <div class="l-whiteframe-header-content">
       <div class="search-field">
-        <input type="text" class="search-input" placeholder="{{t 'pages.dashboard.placeholders.search'}}">
+        {{input value=searchKeyword class='search-input' placeholder=(t 'pages.dashboard.placeholders.search')}}
         <a href="#" class="search-btn"> <i class="icon-search"></i> </a>
       </div>
     </div>
   </div>
 
   <div class="l-whiteframe-content">
-    {{group/group-list groups=model.groups onclick=(action 'showGroupData')}}
+    {{group/group-list groups=searchResults onclick=(action 'showGroupData')}}
   </div>
 </div>
 
