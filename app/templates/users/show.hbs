@@ -5,7 +5,7 @@
     </p>
   </div>
 
-  {{vo2max-list trainings=model.vo2max_trainings}}
+  {{vo2max-list trainings=model.vo2max_trainings onUpdate=(action 'refresh')}}
 </div>
 
 {{#app-dialog open=open title=(t 'pages.users.show.dialog.title')}}

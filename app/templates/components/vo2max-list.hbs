@@ -6,6 +6,7 @@
     <th><td> Velocidade Média </td></th>
     <th><td> Cassificação </td></th>
     <th><td> Resultado </td></th>
+    <th><td> Ações </td></th>
   </thead>
   <tbody>
     {{#each trainings as |training|}}
@@ -17,6 +18,11 @@
         <td> {{training.average_speed}} </td>
         <td> {{training.ranking}} </td>
         <td> {{training.result}} </td>
+        <td align="center">
+          <span data-tooltip="Excluir teste">
+            <i class="icon-clear is-alert-icon" {{action 'deleteTraining' training.user.id training.id}}></i>
+          </span>
+        </td>
       </tr>
 
     {{else}}
