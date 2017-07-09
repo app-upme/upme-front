@@ -20,3 +20,9 @@
   opacity: 1;
   top: 25%;
 }
+
+@media screen and (max-width: 900px) {
+  .l-whiteframe {
+    width: 100%;
+  }
+}
