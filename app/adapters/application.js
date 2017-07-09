@@ -5,8 +5,8 @@ import ENV from "../config/environment";
 export default DS.RESTAdapter.extend({
   host: ENV.host,
   namespace: 'api/v1',
-  // session: Ember.inject.service(),
-  // currentUser: Ember.computed.alias('session.data.authenticated'),
+  session: Ember.inject.service(),
+  currentUser: Ember.computed.alias('session.data.authenticated'),
 
   headers: Ember.computed('currentUser', function() {
     return {

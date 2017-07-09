@@ -24,6 +24,11 @@ module.exports = function(environment) {
     },
     i18n: {
       defaultLocale: 'pt-br'
+    },
+    'ember-simple-auth': {
+      routeAfterAuthentication: 'dashboard',
+      routeIfAlreadyAuthenticated: 'dashboard',
+      authenticationRoute: 'login'
     }
   };
 
