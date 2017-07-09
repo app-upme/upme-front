@@ -1,9 +1,12 @@
 <div class="card {{activeClass}}" {{action onclick this}}>
   <div class="card-header">
     <p class="card-title"> {{group.name}} </p>
-
-    <span class="card-header-info"> <i class="icon-people"></i> {{group.users_count}} </span>
-    <span class="card-header-info"> <i class="icon-event"></i> 23/12/2015 </span>
+    <span class="card-header-info" data-tooltip="Quantidade de praticantes">
+      <i class="icon-people"></i> {{group.users_count}}
+    </span>
+    <span class="card-header-info" data-tooltip="Último treinamento">
+      <i class="icon-event"></i> {{group.last_training_date}}
+    </span>
   </div>
   <div class="card-content">
     {{group.description}}
