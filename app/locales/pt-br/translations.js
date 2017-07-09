@@ -20,7 +20,11 @@ export default {
         "name": "Nome do aluno",
         "email": "Email do aluno",
         "age": "Idade",
-        "gender": "Gênero"
+        "gender": "Selecione o gênero"
+      },
+      "gender.options": {
+        "male": "Masculino",
+        "female": "Feminino"
       },
       "labels.start_training_at": "Inicio do treinamento",
       "buttons.submit": "Salvar praticante"

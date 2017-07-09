@@ -25,6 +25,10 @@ export default Ember.Component.extend({
       groupAdapter.createUser(this.get('groupId'), userAttributes).then( () => {
         this.get('onCreate')();
       });
+    },
+
+    selectGender(gender){
+      this.set('gender', gender);
     }
   }
 });

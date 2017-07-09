@@ -3,12 +3,12 @@ import ApplicationAdapter from './application';
 export default ApplicationAdapter.extend({
 
   createTraining(userId, trainingData) {
-    return this.ajax(this.urlForCreateUser( userId ), 'POST', {
+    return this.ajax(this.urlForTraining( userId ), 'POST', {
       data: trainingData
     });
   },
 
-  urlForCreateUser(userId) {
+  urlForTraining(userId) {
     return this.buildURL() + `/users/${ userId }/vo2max_trainings`;
   },
 
