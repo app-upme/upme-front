@@ -1,0 +1,16 @@
+.l-login {
+  background-color: $white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  border-radius: 4px;
+  min-width: 300px;
+  .l-whiteframe {
+    width: 100%;
+    margin: 0;
+    .l-whiteframe-content {
+      padding: 8px;
+    }
+  }
+}

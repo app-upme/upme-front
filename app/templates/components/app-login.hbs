@@ -1,0 +1,17 @@
+{{#if errors}}
+  <p class="is-text-alert"> {{errors}} </p>
+{{/if}}
+
+<form {{action 'authenticate' on="submit"}}>
+  <div class="form-group">
+    {{input type='email' value=email class='m-input-hint' placeholder=(t 'components.app-login.placeholders.email')}}
+  </div>
+
+  <div class="form-group">
+    {{input type='password' value=password class='m-input-hint' placeholder=(t 'components.app-login.placeholders.password')}}
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">
+    {{t 'components.app-login.buttons.enter'}}
+  </button>
+</form>

@@ -10,7 +10,7 @@ export default Ember.Component.extend({
 
   actions: {
     close() {
-      this.set('open', false)
+      this.set('open', false);
     }
   }
 });

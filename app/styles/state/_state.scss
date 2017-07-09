@@ -21,6 +21,17 @@
   top: 25%;
 }
 
+.is-text-alert {
+  @include font-size(14px);
+  color: $danger-dark-color;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.is-login-background {
+  background-color: $primary-color;
+}
+
 @media screen and (max-width: 900px) {
   .l-whiteframe {
     width: 100%;

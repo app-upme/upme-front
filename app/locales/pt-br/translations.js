@@ -1,5 +1,13 @@
 export default {
   "components": {
+    "app-login": {
+      "errors.blank": "Preencha email e senha para continuar",
+      "buttons.enter": "Entrar",
+      "placeholders": {
+        "email": "Informe seu email",
+        "password": "Digite sua senha"
+      }
+    },
     "form-group": {
       "placeholders": {
         "name": "Nome da turma",
@@ -27,6 +35,7 @@ export default {
     }
   },
   "pages": {
+    "login.title": "Bem-vindo treinador!",
     "dashboard": {
       "groups": "Turmas",
       "history": "Histórico",
