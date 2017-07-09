@@ -69,3 +69,13 @@
     background-color: $danger-dark-color;
   }
 }
+
+.fab, .fab-secondary {
+  &[data-tooltip]:after,
+  &[data-tooltip]:before {
+    bottom: 110%;
+  },
+  &[data-tooltip] {
+    position: fixed;
+  }
+}

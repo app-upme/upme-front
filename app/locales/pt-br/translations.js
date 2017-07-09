@@ -56,7 +56,7 @@ export default {
     },
     "users": {
       "show": {
-        "title": "Inicio do treinamento: {{started_at}}",
+        "title": "<strong>{{name}}</strong> - inicio do treinamento: {{started_at}}",
         "trainings": "Treinamentos",
         "dialog.title": "Adicionar treino"
       }

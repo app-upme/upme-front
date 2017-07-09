@@ -32,5 +32,5 @@
   {{form-user onCreate=(action 'dismissDialog') groupId=model.group.id}}
 {{/app-dialog}}
 
-{{button-fab icon='x' classes='fab-secondary' sendAction=(action 'deleteGroup' model.group.id)}}
-{{button-fab icon='+' sendAction=(action 'openCreateNewUserDialog')}}
+{{button-fab icon='x' tooltip='Excluir grupo' classes='fab-secondary' sendAction=(action 'deleteGroup' model.group.id)}}
+{{button-fab icon='+' tooltip='Adicionar usuário' sendAction=(action 'openCreateNewUserDialog')}}

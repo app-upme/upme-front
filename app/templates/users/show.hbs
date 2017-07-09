@@ -1,7 +1,7 @@
 <div class="l-whiteframe">
   <div class="l-whiteframe-header">
     <p class="lead-text">
-      {{t 'pages.users.show.title' started_at=model.started_training_at}}
+      {{{t 'pages.users.show.title' started_at=model.started_training_at name=model.name}}}
     </p>
   </div>
 
@@ -12,5 +12,5 @@
   {{form-vo2max onCreate=(action 'dismissDialog') userId=model.id}}
 {{/app-dialog}}
 
-{{button-fab icon='x' classes='fab-secondary' sendAction=(action 'deleteUser' model.id)}}
-{{button-fab icon='+' sendAction=(action 'openCreateNewTrainingDialog')}}
+{{button-fab icon='x' tooltip='Excluir usuário' classes='fab-secondary' sendAction=(action 'deleteUser' model.id)}}
+{{button-fab icon='+' tooltip='Adicionar treinamento' sendAction=(action 'openCreateNewTrainingDialog')}}
