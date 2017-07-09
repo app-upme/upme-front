@@ -10,8 +10,8 @@ export default DS.RESTAdapter.extend({
 
   headers: Ember.computed('currentUser', function() {
     return {
-      "USER_TOKEN": this.get('currentUser.token'),
-      "USER_EMAIL": this.get('currentUser.email')
+      "COACH_TOKEN": this.get('currentUser.token'),
+      "COACH_EMAIL": this.get('currentUser.email')
     };
   }),
 

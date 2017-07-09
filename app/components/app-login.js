@@ -11,10 +11,9 @@ export default Ember.Component.extend(Validator, {
   actions: {
     authenticate() {
       if( this.validate() ) {
-        this.get('session').authenticate('authenticator:devise', this.get('email'), this.get('password'))
-          .catch( reason => {
-            this.set('errors', reason);
-          });
+        this.get('session').authenticate('authenticator:devise', this.get('email'), this.get('password')).catch( reason => {
+          this.set('errors', reason.errors.params);
+        });
       } else {
         this.set('errors', this.get('i18n').t('components.app-login.errors.blank'));
       }

@@ -4,11 +4,11 @@
 
 <form {{action 'authenticate' on="submit"}}>
   <div class="form-group">
-    {{input type='email' value=email class='m-input-hint' placeholder=(t 'components.app-login.placeholders.email')}}
+    {{input type='email' value=email placeholder=(t 'components.app-login.placeholders.email')}}
   </div>
 
   <div class="form-group">
-    {{input type='password' value=password class='m-input-hint' placeholder=(t 'components.app-login.placeholders.password')}}
+    {{input type='password' value=password placeholder=(t 'components.app-login.placeholders.password')}}
   </div>
 
   <button type="submit" class="btn btn-primary btn-block">
