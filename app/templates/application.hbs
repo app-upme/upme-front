@@ -3,3 +3,9 @@
 <div class="l-containter">
   {{outlet}}
 </div>
+
+{{#if isActiveLoading}}
+  <div class="container-loader">
+    <div class="loader"></div>
+  </div>
+{{/if}}

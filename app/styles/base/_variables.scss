@@ -10,9 +10,13 @@ $white:          #FFFFFF;
 $gray:           #E3E3E3;
 $gray-lighten:   #F2F2F2;
 $gray-darken:    #B4B4B4;
+$darken-blue:    #2481B2;
 $black-lighten:  rgba(0, 0, 0, 0.5);
 
 $border-color: $gray;
 $input-border-color: $secondary-color;
+
+$loader-color:        $darken-blue;
+$loader-border-color: #F3F3F3;
 
 $text-color: $black-lighten;

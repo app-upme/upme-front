@@ -7,7 +7,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     let groupAdapter = this.get('store').adapterFor('group');
 
     return Ember.RSVP.hash({
-      groups: this.get('store').findAll('group'),
+      groups: this.get('store').findAll('group',{ reload: true }),
       data: groupAdapter.results()
     });
   }

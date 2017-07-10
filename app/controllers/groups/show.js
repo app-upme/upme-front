@@ -25,9 +25,12 @@ export default Ember.Controller.extend({
     openCreateNewUserDialog() {
       this.toggleProperty('open');
     },
-    deleteGroup(id) {
-      if( confirm('tem certeza que deseja excluir este grupo?') ){
-        this.get('store').destroyRecord('group', id);
+    deleteGroup() {
+      if( confirm('tem certeza que deseja excluir este grupo?') ) {
+        this.get('model.group').destroyRecord().then( () => {
+          this.get('store').unloadAll('group');
+          this.transitionToRoute('dashboard');
+        });
       }
     },
     dismissDialog() {

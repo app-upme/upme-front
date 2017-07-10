@@ -1,11 +1,11 @@
 <table class="table">
   <thead>
     <th><td> # </td></th>
-    <th><td> Data </td></th>
+    <th class="is-hide-on-mobile"> <td> Data </td></th>
     <th><td> Distância </td></th>
-    <th><td> Velocidade Média </td></th>
+    <th class="is-hide-on-mobile"> <td> Velocidade Média </td></th>
     <th><td> Cassificação </td></th>
-    <th><td> Resultado </td></th>
+    <th class="is-hide-on-mobile"><td> Resultado </td></th>
     <th><td> Ações </td></th>
   </thead>
   <tbody>
@@ -13,11 +13,11 @@
 
       <tr>
         <td> {{training.id}} </td>
-        <td> {{training.training_date}} </td>
+        <td class="is-hide-on-mobile"> {{training.training_date}} </td>
         <td> {{training.distance}} </td>
-        <td> {{training.average_speed}} </td>
+        <td class="is-hide-on-mobile"> {{training.average_speed}} </td>
         <td> {{training.ranking}} </td>
-        <td> {{training.result}} </td>
+        <td class="is-hide-on-mobile"> {{training.result}} </td>
         <td align="center">
           <span data-tooltip="Excluir teste">
             <i class="icon-clear is-alert-icon" {{action 'deleteTraining' training.user.id training.id}}></i>
