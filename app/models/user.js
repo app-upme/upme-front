@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  group:               DS.belongsTo(),
+  group:               DS.belongsTo({ async: false }),
   vo2max_trainings:    DS.hasMany(),
 
   name:                DS.attr('string'),
