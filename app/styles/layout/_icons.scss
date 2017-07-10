@@ -1,4 +1,7 @@
 .icon-clear:before {
-  content: "\e901";
   @include font-size(24px);
+}
+.icon-exit:before {
+  @include font-size(24px);
+  color: #ccc;
 }
