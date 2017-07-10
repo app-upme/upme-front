@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'upme';
-  src:  url('fonts/upme.eot?4ha561');
-  src:  url('fonts/upme.eot?4ha561#iefix') format('embedded-opentype'),
-    url('fonts/upme.ttf?4ha561') format('truetype'),
-    url('fonts/upme.woff?4ha561') format('woff'),
-    url('fonts/upme.svg?4ha561#upme') format('svg');
+  src:  url('fonts/upme.eot?ruzemj');
+  src:  url('fonts/upme.eot?ruzemj#iefix') format('embedded-opentype'),
+    url('fonts/upme.ttf?ruzemj') format('truetype'),
+    url('fonts/upme.woff?ruzemj') format('woff'),
+    url('fonts/upme.svg?ruzemj#upme') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,12 +33,21 @@
 .icon-event:before {
   content: "\e902";
 }
-.icon-people:before {
+.icon-exit:before {
   content: "\e903";
 }
-.icon-search:before {
+.icon-people:before {
   content: "\e904";
 }
-.icon-settings:before {
+.icon-search:before {
   content: "\e905";
+}
+.icon-settings:before {
+  content: "\e906";
+}
+.icon-thumbs_up_down:before {
+  content: "\e907";
+}
+.icon-trending_up:before {
+  content: "\e908";
 }

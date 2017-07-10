@@ -8,4 +8,10 @@
     display: flex;
     justify-content: center;
   }
+  .l-header-options {
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
 }
