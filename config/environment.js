@@ -48,7 +48,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.host = 'https://upme-app-api.herokuapp.com';
   }
 
   return ENV;
